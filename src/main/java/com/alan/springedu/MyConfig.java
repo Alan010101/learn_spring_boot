@@ -33,5 +33,18 @@ public class MyConfig {
 		return carFactory.createCar();
 	}
 	
+	@Bean
+	public Cat createCat(){
+		return new Cat();
+	}
 	
+	@Bean(initMethod="init",destroyMethod="destroy")
+	public Dog createDog(){
+		return new Dog();
+	}
+	
+	@Bean
+	public Animal createAnimal(){
+		return new Animal();
+	}
 }
