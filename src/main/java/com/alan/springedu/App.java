@@ -17,7 +17,7 @@ public class App {
 		System.out.println(context.getBean(Dog.class)); 
 		System.out.println(context.getBean(Animal.class)); 
 		System.out.println(context.getBean(User.class)); 
-		System.out.println(context.getBean(UserDao.class)); 
+		System.out.println(context.getBean(UserDao.class));
 		context.close();
 	}
 }
